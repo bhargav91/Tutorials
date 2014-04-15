@@ -17,9 +17,9 @@ public class UniqueChecker1{
 
 		HashSet<Character> hashSet = new HashSet<Character>(str.length());
 		
-		for(char c : str.toCharArray()){
-			if(!hashSet.add(Character.toUpperCase(c)))
-				return false;
+		for(char c : str.toCharArray()){ //iterate through character array
+			if(!hashSet.add(Character.toUpperCase(c))) //try to add each char to hashset
+				return false;  //return false if could not add
 		}
 		return true;
 	}
